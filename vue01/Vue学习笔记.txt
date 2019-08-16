@@ -1,0 +1,60 @@
+Vue案例学习笔记:
+	一.数据准备:
+		1.json-server:
+			作用:为Vue学习案例提供数据
+			网址: https://github.com/typicode/json-server
+			安装:
+				1.全局安装 json-server: 
+					npm install -g json-server
+				2.进入到项目目录中:
+				3.初始化项目:	
+					npm init
+					npm install json-server --save
+				4.按照链接上的格式编写db.json
+				5.调整启动方式:
+					将package.json中的scripts修改为
+					"scripts": {
+					    "vue:one": "json-server --watch db.json",
+						"vue:one:remote":"json-server http://jsonplaceholder.typicode.com/db"
+					 },
+					 其中vue:one是本地数据
+					 vue:one:remote是网上数据
+				6.运行项目:
+					npm run 项目(在项目下的package.json中scripts下找)
+		2.访问：
+			http://localhost:3000/
+
+	二.案例实施:
+		1.搭建Vue环境:
+			1.安装NodeJs
+				(1)下载nodejs：https://nodejs.org/en/
+				(2)安装完成后 输入:node -v 查看node版本
+				(3)输入： npm -v  查看npm版本
+			2.把npm镜像改成国内的:
+				npm install -g cnpm --registry=http://registry.npm.taobao.org
+			3.安装构建工具:
+				npm install -g vue-cli 
+				检查是否安装成功: vue -V (一定要注意大小写)
+			4.安装 webpack
+				npm install -g webpack
+				webpack版本查看: webpack -v
+			5.其他安装
+				cnpm install vue-router --save(装路由)
+				cnpm install vue-resource --save(发送请求)
+
+		2.创建Vue项目:
+			1.创建项目
+				在cmd窗口中输入：vue init webpack 项目名
+				根据提示填写信息
+			2.进入到项目目录
+			3.运行项目：
+				npm run dev
+			4.在浏览器中查看:
+				http://localhost:8080
+		3.编写程序
+			1.学习视频:https://www.bilibili.com/video/av51530091/?p=1
+			2.学习代码:https://github.com/github3332422/VueDemo01
+			
+
+	三.学习心得:
+		1.通过本次案例，深刻的体会到vue框架对前后端的分离更加彻底。

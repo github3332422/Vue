@@ -1,0 +1,15 @@
+{
+  "name": "vuedemo01",
+  "version": "1.0.0",
+  "description": "vuedemo01",
+  "main": "index.js",
+  "scripts": {
+    "vue:one": "json-server --watch db.json",
+	"vue:one:remote":"json-server http://jsonplaceholder.typicode.com/db"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.15.0"
+  }
+}

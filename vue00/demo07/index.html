@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>demo07</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			<h1>V-For 循环</h1>
+			<!--数组-->
+			<ul>
+				<li v-for="character in characters">
+					{{character}}
+				</li>
+			</ul>
+			
+			<ul>
+				<li v-for="user in users">
+						{{user.name}}---{{user.age}}
+				</li>
+			</ul>
+			
+			<ul>
+				<li v-for="(user,index) in users">
+						{{index}}---{{user.name}}---{{user.age}}
+				</li>
+			</ul>
+			
+			<template v-for="(user,index) in users">
+				<p>
+					{{index}}---{{user.name}}---{{user.age}}
+				</p>
+			</template>
+		</div>
+	</body>
+	<script src="app.js"></script>
+</html>

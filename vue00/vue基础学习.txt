@@ -1,0 +1,61 @@
+Vue基础学习:
+	1.课程代码:https://github.com/hemiahwu
+
+	2.获取代码:可以按照我CSDN上的教程来做
+		url:https://blog.csdn.net/zq476668643/article/details/95302001
+
+	3.Vue是一个渐进式的JavaScript框架:没有太多限制的JavaScript框架
+
+	4.官方文档链接:https://cn.vuejs.org/v2/guide/
+
+	5.使用:
+		1.引入CDN
+			https://cn.vuejs.org/v2/guide/installation.html#CDN
+		2.搭建脚手架
+
+	6.Vue中的方法
+		data:数据
+			el: element 代表需要获取的元素 一定是HTML中的根容器元素
+			data: 用于数据的存储,data的数据只有在el的范围内才能展示
+		methods:
+			用于存储各种方法。
+			方法中调用数据: this.data中的数据的名称。
+		数据绑定:
+			1.绑定属性值
+				v-bind：对数据进行绑定
+				<a v-bind:href="website">Vue官网</a>
+				<input type="text" v-bind:value="name"> </input>
+			2.绑定方法：
+				v-html:
+				<p v-html="websiteTag"></p>
+		方法的调用:
+			在{{}}中必须加()
+			如果需要传参的话必须加
+			如果在""不需要添加但传参的时候要添加
+		事件:
+			鼠标事件:
+
+			事件处理:
+				https://cn.vuejs.org/v2/guide/events.html
+			键盘事件:
+				https://cn.vuejs.org/v2/guide/events.html#%E6%8C%89%E9%94%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6
+		双向的数据绑定:
+			1.通过方法实现:
+			2.通过v-modal实现:
+		Vue的计算属性:
+			URL: https://cn.vuejs.org/v2/guide/computed.html
+			computed:相对methods更加友好，methods使用一个的话都会点击，而computed不会。
+		动态绑定CSS样式:
+			demo05
+		条件渲染:
+			1.demo06,demo07
+			2.url: https://cn.vuejs.org/v2/guide/conditional.html
+			3.v-if显示的数据  :不显示的数据不会出现在html中
+			4.v-show显示的数据:不显示的数据会出现在html中
+			5.v-for:
+
+
+
+
+
+
